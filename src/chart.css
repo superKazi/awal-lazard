@@ -1,0 +1,46 @@
+.buttons {
+  inline-size: max-content;
+  margin-inline: auto;
+  margin-block-start: 2rem;
+}
+.chart-container {
+  position: relative;
+  inline-size: min(600px, 98vi);
+  block-size: 100%;
+  aspect-ratio: 980 / 740;
+  margin-inline: auto;
+  margin-block-start: 1rem;
+}
+
+button {
+  appearance: none;
+  border: 2px solid black;
+  background-color: white;
+  margin-inline: 0.25rem;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  transition: all 200ms ease;
+}
+button[data-hovered] {
+  border: 1px solid red;
+}
+button[data-pressed] {
+  scale: 0.9;
+}
+button[data-selected] {
+  background-color: black;
+  color: white;
+}
+
+button[data-hovered].AAPL {
+  border: 2px solid var(--AAPL);
+}
+button[data-hovered].FB {
+  border: 2px solid var(--FB);
+}
+button[data-hovered].GOOGL {
+  border: 2px solid var(--GOOGL);
+}
+button[data-hovered].MSFT {
+  border: 2px solid var(--MSFT);
+}

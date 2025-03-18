@@ -1,0 +1,16 @@
+.hover-circle {
+  fill: #fff;
+}
+
+.hover-circle.AAPL {
+  stroke: var(--AAPL);
+}
+.hover-circle.FB {
+  stroke: var(--FB);
+}
+.hover-circle.GOOGL {
+  stroke: var(--GOOGL);
+}
+.hover-circle.MSFT {
+  stroke: var(--MSFT);
+}

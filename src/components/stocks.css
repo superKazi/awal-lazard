@@ -1,0 +1,67 @@
+.stocks-container {
+  margin-block-start: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.stock-group {
+  display: flex;
+  gap: 1.5rem;
+  line-height: 1;
+  border-inline-start: 0.5rem solid;
+  padding-inline-start: 0.25rem;
+}
+.date {
+  font-weight: 700;
+}
+.AAPL.stock-group {
+  border-color: var(--AAPL);
+}
+.FB.stock-group {
+  border-color: var(--FB);
+}
+.GOOGL.stock-group {
+  border-color: var(--GOOGL);
+}
+.MSFT.stock-group {
+  border-color: var(--MSFT);
+}
+
+.stock,
+.percent {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.percent span {
+  font-size: 1.5rem;
+}
+
+.price,
+.absolute {
+  font-size: 1rem;
+}
+
+.absolute {
+  text-align: right;
+}
+
+.up {
+  color: #2ca02c;
+}
+.down {
+  color: #d62728;
+}
+
+.AAPL :is(.stock, .price) {
+  color: var(--AAPL);
+}
+.FB :is(.stock, .price) {
+  color: var(--FB);
+}
+.GOOGL :is(.stock, .price) {
+  color: var(--GOOGL);
+}
+.MSFT :is(.stock, .price) {
+  color: var(--MSFT);
+}

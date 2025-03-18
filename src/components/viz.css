@@ -1,0 +1,38 @@
+.price-tick tspan {
+  font-size: 1.1rem;
+}
+.time-tick tspan {
+  font-family: "News Cycle";
+  font-size: 0.8rem;
+}
+.market-line {
+  filter: url("#shadow");
+}
+.zero {
+  stroke: #000;
+}
+.AAPL.market-line {
+  stroke: var(--AAPL);
+}
+.FB.market-line {
+  stroke: var(--FB);
+}
+.GOOGL.market-line {
+  stroke: var(--GOOGL);
+}
+.MSFT.market-line {
+  stroke: var(--MSFT);
+}
+
+#marker-circle-AAPL {
+  fill: var(--AAPL);
+}
+#marker-circle-FB {
+  fill: var(--FB);
+}
+#marker-circle-GOOGL {
+  fill: var(--GOOGL);
+}
+#marker-circle-MSFT {
+  fill: var(--MSFT);
+}
